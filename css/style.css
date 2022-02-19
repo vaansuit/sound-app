@@ -15,10 +15,29 @@
 
 .time-select, 
 .sound-picker,
-.player-container {
+.player-container
+{
     height: 80%;
     flex: 1; /*that make us see the colors of the sections */
+    display: flex; /*put everything in the same row*/
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+.player-container {
+    position: relative;
+}
+
+.player-container svg {
+    position: absolute;
+    height: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /*putting the circle in the middle */
+    pointer-events: none; /* that way we can click in the play button*/
+}
+
 
 .time-select {
     background-color: blue;
@@ -30,4 +49,28 @@
 
 .player-container {
     background-color: green;
+}
+/*Use this to see the canvas that were created */
+
+.time-display {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    font-size: 50px;
+
+}
+
+
+video {
+    display: none; /* so we hide the video to edit the css */
+
+}
+
+.time-select button,
+.sound-picker button {
+    color: white;
+    width: 30%;
+    height: 10%;
+    background: none;
+    border: 2px solid white;
 }
