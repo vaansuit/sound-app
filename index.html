@@ -11,37 +11,20 @@
     
     <div class="app">
 
-        <div class="vid-container">
-            <video loop> <!-- looping the video -->
-                <source src="./video/rain.mp4" type="video/mp4">
-            </video>
+        <div class="gif-container">
+            <source src='./gif/naruto.gif'>
         </div>
 
-        
-        <div class="player-container">
-            <audio class="song">
-                <source src="./sounds/rain.mp3">
-            </audio>
-            <img src="./svg/play.svg" alt="play" class="play">
-            
-           
-                
-           
-                
+        <div class="picker">
 
-           
-            
-            <h3 class="time-display">0:00</h3>
-        </div>
-        <div class="sound-picker">
+            <button data-sound="./sounds/naruto.mp3" data-video='./gif/naruto.gif'>
+                <img src="./images/n-icon.jpg" alt="naruto">
+            </button>
 
-        <button data-sound="./sounds/rain.mp3" data-video='./video/rain.mp4'>
-            <img src="./svg/rain.svg" alt="rain">
-        </button>
+            <button data-sound="./sounds/vegeta.mp3" data-video='./gif/vegeta.gif'>
+                <img src="./images/v-icon.jpg" alt="vegeta">
+            </button>
 
-        <button data-sound="./sounds/beach.mp3.mp3" data-video='./video/beach.mp4'>
-            <img src="./svg/beach.svg" alt="beach">
-        </button>
         </div>
     </div>
 
