@@ -7,21 +7,25 @@
     <link rel="stylesheet" href="./css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="body">
     
+    <div class="background-image" style="background-image: url(./images/m-bg.jpg);"></div>
     <div class="app">
 
         <div class="gif-container">
-            <source src='./gif/naruto.gif'>
+            <img class="img" src='./gif/naruto.gif'>
         </div>
 
         <div class="picker">
+            <audio class="song">
+                <source src="./sounds/naruto.mp3">
+            </audio>
 
-            <button data-sound="./sounds/naruto.mp3" data-video='./gif/naruto.gif'>
+            <button data-sound="./sounds/naruto.mp3" data-image='./gif/naruto.gif'>
                 <img src="./images/n-icon.jpg" alt="naruto">
             </button>
 
-            <button data-sound="./sounds/vegeta.mp3" data-video='./gif/vegeta.gif'>
+            <button data-sound="./sounds/vegeta.mp3" data-image='./gif/vegeta.gif'>
                 <img src="./images/v-icon.jpg" alt="vegeta">
             </button>
 
